@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trackrr | Register</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"
+      integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- update the version number as needed -->
+    <script src="https://use.fontawesome.com/fc6d352727.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.1.0/trix-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.1.0/trix.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/trix/1.1.0/trix.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Francois+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://res.cloudinary.com/nikasemo/raw/upload/v1553478402/jquery.scrollme_putswf.js"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+    <!-- 
+              initialize the SDK after all desired features are loaded, set useEmulator to false
+              to avoid connecting the SDK to running emulators.
+            -->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBhhyNHbuzhyUO6FQOdle6JwdKoh4kYHBE",
+        authDomain: "trackrrapp.firebaseapp.com",
+        projectId: "trackrrapp",
+        storageBucket: "trackrrapp.appspot.com",
+        messagingSenderId: "424208291253",
+        appId: "1:424208291253:web:1c5f70399f2bf04fc6f5fc",
+        measurementId: "G-16SXL4H71M",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="app.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175158216-1"
+    ></script>
+    <style>
+      .navbackground {
+        background-color: #ffffff;
+        box-shadow: 1px 4px 13px 0px rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 1px 4px 13px 0px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 1px 4px 13px 0px rgba(0, 0, 0, 0.12);
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .sectionhome {
+        margin-top: 110px;
+      }
+
+      .formhold {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Montserrat', sans-serif">
+    <nav
+      class="navbar navbar-light navbar-expand-lg fixed-top navbackground dottt"
+      style="z-index: 9"
+    >
+      <div class="container navbodyhold">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="
+            color: #0047ab;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+          "
+        >
+          <img src="trackerlogo1.png" height="30px" width="30px" />
+          <span style="font-weight: 600; color: #0080ff">Trackrr</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar top-bar"></span>
+                  <span class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+                </button> -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto"></ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#!" id="logMeOut" class="nav-link" id="changecolor2">
+                Log Out
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="sectionhome">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <button onclick="history.back()" style="margin-bottom: 30px">
+              Back
+            </button>
+            <h5>New Classroom</h5>
+            <form id="createClassroomForm">
+              <div class="formhold">
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="cName"
+                  id="c_name"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="formhold">
+                <label>Description</label>
+                <input
+                  type="text"
+                  name="cDescription"
+                  id="c_description"
+                  class="form-control"
+                  placeholder="Description"
+                />
+              </div>
+              <button
+                type="button"
+                style="margin-top: 20px"
+                id="createCButton"
+                class="btn btn-lg btn-primary"
+              >
+                Create
+              </button>
+              <p style="margin-top: 10px; display: none" id="sumbitLoader">
+                Submitting...
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"
+    ></script>
+    <script src="classroom.js"></script>
+
+    <script type="text/javascript">
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+  </body>
+</html>
